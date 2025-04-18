@@ -12,11 +12,11 @@ class Pet:
         else:
             self.hunger = 0
         self.happiness = min(self.happiness + 1, 10)
-        print(f"{self.name} ate food. 🍽️")
+        print(f"{self.name} ate food.")
 
     def sleep(self):
         self.energy = min(self.energy + 5, 10)
-        print(f"{self.name} took a nap. 😴")
+        print(f"{self.name} took a nap.")
 
     def play(self):
         if self.energy >= 2:
@@ -25,10 +25,10 @@ class Pet:
             self.energy = 0
         self.happiness = min(self.happiness + 2, 10)
         self.hunger = min(self.hunger + 1, 10)
-        print(f"{self.name} played and had fun! 🐾")
+        print(f"{self.name} played and had fun! ")
 
     def get_status(self):
-        print(f"🐶 {self.name}'s Status:")
+        print(f" {self.name}'s Status:")
         print(f"   Hunger: {self.hunger}/10")
         print(f"   Energy: {self.energy}/10")
         print(f"   Happiness: {self.happiness}/10")
@@ -36,7 +36,7 @@ class Pet:
     def train(self, trick):
         self.tricks.append(trick)
         self.happiness = min(self.happiness + 2, 10)
-        print(f"{self.name} learned a new trick: {trick}! 🎉")
+        print(f"{self.name} learned a new trick: {trick}! ")
 
     def show_tricks(self):
         if self.tricks:
